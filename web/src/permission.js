@@ -6,7 +6,7 @@ import Nprogress from 'nprogress'
 import 'nprogress/nprogress.css'
 Nprogress.configure({ showSpinner: false, ease: 'ease', speed: 500 })
 
-const whiteList = ['Login', 'Init']
+const whiteList = ['Login', 'Init','memberH5Detail']
 
 const getRouter = async (userStore) => {
   const routerStore = useRouterStore()
@@ -45,6 +45,12 @@ async function handleKeepAlive(to) {
 }
 
 router.beforeEach(async (to, from) => {
+  
+  console.log(to.name)
+  if (to.name === 'memberH5Detail') {
+    return true
+  }
+  
   const routerStore = useRouterStore()
   Nprogress.start()
   const userStore = useUserStore()

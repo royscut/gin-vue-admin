@@ -21,6 +21,14 @@ const routes = [
       closeTab: true
     },
     component: () => import('@/view/error/index.vue')
+  },
+  {
+    path: '/h5/member/detail',
+    name: 'memberH5Detail',
+    component: () => import('@/view/member/mMemberInfo/h5Detail.vue'),
+    meta: {
+      title: '会员详情',
+    }
   }
 ]
 
