@@ -83,10 +83,10 @@ hua-wei-obs:
     access-key: you-access-key
     secret-key: you-secret-key
 jwt:
-    signing-key: 99d0d96f-6201-467b-8f88-8c91683c6c68
-    expires-time: 7d
-    buffer-time: 1d
-    issuer: qmPlus
+    signing-key: 827r4o6f-6201-467b-8f88-78dc683c6c68
+    expires-time: 15h
+    buffer-time: 1h
+    issuer: royal
 local:
     path: uploads/file
     store-path: uploads/file
@@ -222,15 +222,16 @@ system:
     use-redis: false
     use-mongo: false
     use-strict-auth: false
-tencent-cos:
-    bucket: xxxxx-10005608
-    region: ap-shanghai
-    secret-id: your-secret-id
-    secret-key: your-secret-key
+tencent-cos: 
+    #用户名 membercard 
+    bucket: roycard-1251582709
+    region: ap-hongkong
+    secret-id: AKIDRxxxxxxx
+    secret-key: WosjNxxxxxx
     base-url: https://gin.vue.admin
     path-prefix: github.com/flipped-aurora/gin-vue-admin/server
 zap:
-    level: info
+    level: debug
     prefix: '[roy-admin]'
     format: console
     director: log
@@ -239,3 +240,4 @@ zap:
     show-line: true
     log-in-console: true
     retention-day: -1
+

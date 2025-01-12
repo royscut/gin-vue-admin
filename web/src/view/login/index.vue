@@ -13,14 +13,14 @@
         >
           <div>
             <div class="flex items-center justify-center">
-              <img class="w-24" :src="$GIN_VUE_ADMIN.appLogo" alt />
+              <!-- <img class="w-24" :src="$GIN_VUE_ADMIN.appLogo" alt /> -->
             </div>
             <div class="mb-9">
               <p class="text-center text-4xl font-bold">
-                {{ $GIN_VUE_ADMIN.appName }}
+                会员卡券核心管理系统 
               </p>
               <p class="text-center text-sm font-normal text-gray-500 mt-2.5">
-                A management platform using Golang and Vue
+                专为会员卡券管理而生，服务实体行业数字化升级
               </p>
             </div>
             <el-form
@@ -79,7 +79,7 @@
                   >登 录</el-button
                 >
               </el-form-item>
-              <el-form-item class="mb-6">
+              <!-- <el-form-item class="mb-6">
                 <el-button
                   class="shadow shadow-active h-11 w-full"
                   type="primary"
@@ -87,7 +87,7 @@
                   @click="checkInit"
                   >前往初始化</el-button
                 >
-              </el-form-item>
+              </el-form-item> -->
             </el-form>
           </div>
         </div>
@@ -103,21 +103,21 @@
 
     <BottomInfo class="left-0 right-0 absolute bottom-3 mx-auto w-full z-20">
       <div class="links items-center justify-center gap-2 hidden md:flex">
-        <a href="https://www.gin-vue-admin.com/" target="_blank">
-          <img src="@/assets/docs.png" class="w-8 h-8" alt="文档" />
+        <!-- <a href="https://www.gin-vue-admin.com/" target="_blank">
+          <img src="@/assets/docs.png" class="w-8 h-8" alt="文档"  disable/>
         </a>
         <a href="https://support.qq.com/product/371961" target="_blank">
-          <img src="@/assets/kefu.png" class="w-8 h-8" alt="客服" />
+          <img src="@/assets/kefu.png" class="w-8 h-8" alt="客服"  disable/>
         </a>
         <a
           href="https://github.com/flipped-aurora/gin-vue-admin"
           target="_blank"
         >
-          <img src="@/assets/github.png" class="w-8 h-8" alt="github" />
-        </a>
-        <a href="https://space.bilibili.com/322210472" target="_blank">
-          <img src="@/assets/video.png" class="w-8 h-8" alt="视频站" />
-        </a>
+          <img src="@/assets/github.png" class="w-8 h-8" alt="github"  />
+        </a> -->
+        <!-- <a href="https://space.bilibili.com/322210472" target="_blank" disable>
+          <img src="@/assets/video.png" class="w-8 h-8" alt="视频站"  />
+        </a> -->
       </div>
     </BottomInfo>
   </div>
